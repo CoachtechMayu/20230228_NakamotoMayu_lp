@@ -1,0 +1,543 @@
+/* @media screen and (min-width:1000px) and (max-width: 1500px) { */
+body{
+    max-width: 1500px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+}
+/* ヘッダー */
+
+.header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;    /* ロゴ・ナビ均一横並び */
+}
+.header__logo img{
+    width: 100px;
+    margin: 0px 0px 0px 20px;          /* 上下右0px 左余白20px */
+}
+.header__inform li {
+    margin: 20px 20px;                 /* 上下左右余白20px */
+    display: inline-block;             /* リンク横並び */
+}
+
+.header__inform li:last-of-type{       /* 最後のみ余白広め */
+    margin-right: 50px;
+}
+
+.header__inform {
+    list-style-type: none;              /* 先頭マーク消去 */
+}
+
+.header__inform li a {
+    text-decoration: none;              /* 下線消去 */
+    color: rgb(127, 127, 130);
+}
+
+/* タイトル */
+.title{
+    position: relative;
+    margin-bottom: 50px;                /* 下余白 */
+}
+.title__img{
+    display: block;
+    margin-left: auto;                  /* 左寄せ */
+}
+.title__img img{
+    width: 100%;
+}
+
+.title__block{
+    position: absolute;
+    display: block;
+    white-space: nowrap;                /* 折り返し禁止 */
+    top: 80px;
+    left: 15%;
+}
+
+.title__maintitle {
+    position: absolute;
+    line-height: 110px;
+    margin: 10px 0px;
+    color: rgb(203, 16, 112);
+    font-size: 75px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.title__subitle{
+    position: absolute;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    color: rgb(203, 16, 112);
+    font-size: 25px;
+}
+
+.title__about{
+    position: absolute;
+    line-height: 30px;
+    color: rgb(127, 127, 130);
+    margin-top: 340px;
+}
+.color-sky {
+    color: rgb(34, 148, 171);               /* 部分的に色変更*/
+}
+/*NEWS*/
+
+.News {
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+}
+.News-title-block{
+    margin-top: 30px;
+    margin-left: 20%;
+}
+.news-text {
+    color: rgb(203, 16, 112);
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.news-title {
+    margin: 20px auto;
+    font-size: 25px;
+    color: rgb(127, 127, 130);
+}
+
+.news-block{
+    margin: 20px auto;
+    margin-left: 20%;
+    border-top: 3px solid #cecbcb;
+    border-bottom: 3px solid #cecbcb;
+    padding: 30px 0px;
+}
+
+.news-list {
+    list-style-type: none;
+}
+
+.item a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #CCC;
+    width: 800px;
+    border-top: none;
+    padding: 10px 0px;
+}
+
+.item p{
+    display: inline-block;
+}
+
+.date {
+    margin: 12px auto;
+    min-width: 140px;
+    font-size: 18px;
+    color: #999;
+    padding: 0 20px 0 0;
+}
+
+.category {
+    margin: 10px auto;
+    min-width: 140px;
+    padding: 0 20px 0 0;
+}
+
+.category span {
+    background:rgb(203, 16, 112);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.information {
+    margin: 12px auto;
+    color: #999;
+}
+
+/* About */
+.About{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 60px auto;
+    background-color:#f1eeee;
+}
+
+.about-text {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(203, 16, 112);
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    color: rgb(127, 127, 130);
+}
+.about-info{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    margin: 60px auto;
+}
+
+.about-info__text{
+    font-size: 18px;
+    color: rgb(128, 126, 126);
+    line-height: 28px;
+    margin-left: 180px;
+    white-space: nowrap;
+}
+
+.about-info__img {
+    margin-left: 220px;
+    width: 28%;
+}
+
+/* Service */
+.Service{
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+}
+
+.Service-ttl-block{
+    margin: 30px 0px 30px 180px;
+}
+
+.service-text {
+    margin: 15px auto;
+    color: rgb(203, 16, 112);
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.service-title {
+    font-size: 30px;
+    color: rgb(127, 127, 130);
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 2fr 2fr;
+    margin: 30px 0px 30px 180px;
+    width: 1060px;
+    height: 400px;
+}
+
+.box1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: rgb(203, 16, 112) url(../img/service__first.svg) no-repeat;
+    background-size: 35%;
+    background-position: 50% 10%;
+    color: #FFF;
+}
+.box1__title{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 210px;
+    margin-bottom: 20px;
+}
+
+.box1__text {
+    margin: 0px 70px;
+    line-height: 28px;
+}
+
+.box2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background: rgb(184, 94, 139) url(../img/service__first.svg) no-repeat;
+    background-size: 30%;
+    background-position: 5% 50%;
+    color: #FFF;
+}
+
+.box3 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background: rgb(187, 138, 162) url(../img/service__first.svg) no-repeat;
+    background-size: 30%;
+    background-position: 5% 50%;
+    color: #FFF;
+}
+
+.box__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+
+.box__text {
+    margin-left: 200px;
+    line-height: 28px;
+}
+
+/* Blog */
+.Blog {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    background-color: #f1eeee;
+
+}
+
+.Blog-ttl-block{
+    margin: 30px 0px 30px 210px;
+}
+.blog-text {
+    margin: 20px auto;
+    color: rgb(203, 16, 112);
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.blog-title {
+    margin: 20px auto;
+    font-size: 30px;
+    color: rgb(127, 127, 130);
+}
+
+.blog-flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 160px;
+}
+
+.blog-card{
+    width: 25%;
+    background-color: #FFF;
+    border-radius: 0px 0px 15px 15px;
+}
+.card__img{
+    position: relative;
+}
+
+.img-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    line-height: 1;
+    border-radius: 15px 0px 0px 0px;
+    padding: 5px 10px;  /*文字周りの余白*/
+    color: #FFF;
+    background-color: rgb(203, 16, 112);
+}
+
+.card__img img {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card__content {
+    padding: 15px 20px;
+}
+
+.card__content-ttl{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: #696969;
+}
+
+.card__content-tag {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #9e9e9e;
+    margin-bottom: 5px;
+}
+
+.blog-btn{
+    text-align: center;
+    margin: 35px auto;
+}
+
+.blog-back{
+    width: 200px;
+    padding: 20px 0;
+    color:rgb(203, 16, 112);
+    border-radius: 30px;
+    background-color: #FFF;
+    border: 3px rgb(203, 16, 112) solid;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* 会社概要 */
+.Company {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+}
+.Company-ttl-block {
+    margin: 30px 0px 30px 350px;
+}
+
+.company-text {
+    margin: 20px auto;
+    color: rgb(203, 16, 112);
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.company-title {
+    font-size: 30px;
+    color: rgb(127, 127, 130);
+}
+
+table,th,td {
+    border: 1px solid;
+    border-color: #cfcfcf;
+
+}
+table{
+    width: 800px;
+    margin: auto;
+}
+
+th{
+    width: 200px;
+    background-color: #e6e6e6;
+    padding: 25px;
+    color: rgb(91, 91, 91);
+    text-align: left;
+}
+td{
+    text-align: left;
+    padding-left: 20px;
+    color: rgb(127, 127, 130);
+    font-weight: 600;
+}
+
+/* information */
+.information__img{
+    display: flex;
+}
+.recruit {
+    position: relative;
+}
+.recruit img{
+    width: 750px;
+    height: 300px;
+    object-fit: cover;
+}
+.img-recruit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size:30px;
+}
+
+.interview{
+    position: relative;
+}
+.interview img {
+    width: 750px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-interview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 30px;
+}
+
+/* お問い合わせ */
+.Inquiry{
+    margin: 80px auto;
+}
+.inquiry-text{
+    position: relative;
+    text-align: center;
+    margin-top: 70px;
+    color: rgb(127, 127, 130);
+    font-weight: 600;
+    font-size: 20px;
+    height: 100px;
+}
+
+.inquiry-text::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 50px;
+    margin: auto;
+    background-color: rgb(212, 4, 153);
+}
+
+.inquiry-btn{
+    position: relative;
+    background: linear-gradient(to right, #ff00b7 0%, #9f0067 100%);
+    box-shadow: 0px 8px 0px #7b004e;
+    width: 350px;
+    display: block;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 30px auto;
+}
+.inquiry-mail{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.inquiry-mail::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    background: url(../img/mailicon.svg) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+}
+
+/* footer */
+.footer{
+    height: 100px;
+    background-color: #e5e5e5;
+}
+
+.footer__text{
+    text-align: center;
+    line-height: 100px;
+    color: rgb(91, 91, 91);
+    margin: auto;
+    font-size: 15px;
+    font-weight: 510;
+}
