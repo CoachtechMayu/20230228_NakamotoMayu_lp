@@ -202,7 +202,7 @@ body{
     font-size: 1.2rem;
     color: rgb(128, 126, 126);
     line-height: 2em;
-    margin-left: 10em;
+    margin-left: 11em;
 }
 
 .about-info__img {
@@ -219,7 +219,7 @@ body{
 }
 
 .Service-ttl-block{
-    margin: 5vh 0px 5vh 12vw;
+    margin: 5vh 0px 5vh 15vw;
 }
 
 .service-text {
@@ -238,7 +238,7 @@ body{
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    margin: 2vh 0px 5vh 12vw;
+    margin: 2vh auto 5vh auto;
     width: 70vw;
     height: 50vh;
 }
@@ -457,8 +457,6 @@ td{
 .recruit img{
     width: 50vw;
     height: auto;
-    /* margin-left: calc(-50vw + 50%); */
-    /* background-size: cover; */
     object-position: cover;
 }
 .img-recruit {
